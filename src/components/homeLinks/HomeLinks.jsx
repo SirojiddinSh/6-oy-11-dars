@@ -17,6 +17,9 @@ const HomeLinks = () => {
                         <li>
                             <NavLink to="/ux">UX Design</NavLink>
                         </li>
+                        <li>
+                            <NavLink to="/product">Products</NavLink>
+                        </li>
                     </ul>
                 </div>
             </Container>
