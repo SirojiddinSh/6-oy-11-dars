@@ -1,7 +1,9 @@
 import "./UX.css";
 import { UX } from "../../../../cloneApi/Clone";
+import { useTranslation } from "react-i18next";
 
 const UXcards = () => {
+    let { t } = useTranslation();
     return (
         <div>
             <div className="UX__cards">
@@ -12,11 +14,9 @@ const UXcards = () => {
                             <h3>NOV 23 2020</h3>
                             <h2>{item.title}</h2>
                             <p>
-                                A quick guide to assisting users in the
-                                challenging steps from learning about your
-                                podcast on the web. A quick guide to assisting
-                                users in the  challenging steps from learning
-                                about your podcast on the web.{" "}
+                                {t(
+                                    "A quick guide to assisting users in the challenging steps from learning about your podcast on the web. A quick guide to assisting  users in the  challenging steps from learning about your podcast on the web."
+                                )}
                             </p>
                         </div>
                     );
